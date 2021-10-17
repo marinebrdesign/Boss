@@ -1,0 +1,176 @@
+body {
+    background-color: #06171E;
+}
+
+header {
+    background-color: #06171E;
+}
+
+footer {
+    background-color: white;
+}
+
+h1, h2, h3, h4 {
+    font-family: Limelight;
+    font-weight: 400;
+    color: white;
+}
+
+label{
+    font-family: Limelight;
+    font-weight: 400;
+    color: black;
+}
+
+.ajouter_photos h2 {
+    text-align: left;
+}
+
+a {
+    font-family: Limelight;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+.tweet1 a, .tweet2 a, .tweet3 a {
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.recompenses p {
+    font-family: Limelight;
+    font-weight: 400;
+    color: white;
+}
+
+p {
+    font-family: Roboto;
+    font-weight: 300;
+    color: white;
+}
+
+footer p {
+    font-family: Kerox-NonCommercial;
+    color: black;
+}
+
+.recompenses p {
+    text-align: center;
+}
+
+.biographie p, .biographie h3 {
+    text-align: left;
+}
+
+#instagram {
+    color: black;
+}
+
+/*ajouter album*/
+.modification h2 {
+    color: black;
+    text-align: left;
+}
+
+@media screen and (max-width: 3000px) {
+    h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+
+    h2, label {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .recompenses p {
+        font-size: 35px;
+    }
+
+    .biographie p {
+        font-size: 20px;
+    }
+
+    .tweet1 a, .tweet2 a, .tweet3 a {
+        font-size: 50px;
+    }
+
+    .modification h2, .modification label {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    h2, label {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .recompenses p {
+        font-size: 20px;
+    }
+
+    .biographie p {
+        font-size: 16px;
+    }
+
+    .tweet1 a, .tweet2 a, .tweet3 a {
+        font-size: 30px;
+    }
+
+    .modification h2, .modification label {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h2, label {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .recompenses p {
+        font-size: 12px;
+    }
+
+    .biographie p {
+        font-size: 12px;
+    }
+
+    .tweet1 a, .tweet2 a, .tweet3 a {
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+    .modification h2, .modification label {
+        font-size: 16px;
+    }
+}

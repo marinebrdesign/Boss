@@ -1,0 +1,14 @@
+[
+{
+        "id": 1,
+        "image": "img/dua_lipa.jpg",
+        "nom": "Dua Lipa",
+        "date": "02/07/2017"
+    },
+    {
+        "id": 2,
+        "image": "img/future_nostalgia.jpg",
+        "nom": "Future Nostalgia",
+        "date": "27/03/2020"
+    }
+]

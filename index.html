@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Dua Lipa</title>
+    <!-- VueJS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Vue-router pour injection des composants => routage & navigation -->
+    <script src="https://unpkg.com/vue-router"></script>
+
+    <!-- Lib Axios pour Ajax -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Librairie momentJS : format dates -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js">
+    </script>
+
+    <!-- Css de la maquette -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6113af7c7c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/mescss/typographie_couleurs.css">
+    <link rel="stylesheet" href="css/mescss/menu.css">
+    <link rel="stylesheet" href="css/mescss/style_mise_en_page.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Roboto:wght@300&display=swap');</style>
+</head>
+<body>
+<!-- Point d'injection des composants -->
+<router-view id="app"></router-view>
+<!-- Modal
+<div
+        class="modal fade"
+        id="cnxModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Connexion à l'application</h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Login</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Login">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Mot de passe</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Mot de passe">
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Deconnexion</button>
+                <button type="button" class="btn btn-primary">Connexion</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+
+
+<!-- les composants utilisés -->
+<script src="components/n-header.vue.js"></script>
+<script src="components/n-footer.vue.js"></script>
+
+
+
+<!-- les pages utilisés -->
+<script src="pages/accueil.vue.js"></script>
+<script src="pages/albums.vue.js"></script>
+<script src="pages/biographie.vue.js"></script>
+<script src="pages/recompenses.vue.js"></script>
+<script src="pages/modification.vue.js"></script>
+
+<script>
+    // les routages / navigations de l'application
+    var routes = [
+        { path: '/', 				        component: Accueil,         alias:'/accueil' },
+        { path: '/albums', 		            component: Albums },
+        { path: '/biographie', 	            component: Biographie},
+        { path: '/modification', 	        component: Modification},
+        { path: '/recompenses', 		    component: Recompenses},
+    ];
+
+    // Le router initialisé sur l'accueil
+    var router = new VueRouter(
+        {routes: routes}
+    );
+
+    // La Vue principale de l'application
+    var app = new Vue({
+        el: '#app',
+        router: router
+    })
+</script>
+
+</body>
+</html>
